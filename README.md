@@ -2,47 +2,44 @@
 
 A starter repository for the CSC10014 Smart Virtual Assistant project.
 
-Copy and paste, then Enter. If it have any problems, read "Troubleshooting". 
+## Prerequisites
+- Python 3.10+
+- Git
 
-Run on Terminal.
+---
 
-Change "<your_github_account_name>", which is under your avatar.
+## Setup && Run
 
-## Setup
+Mở **PowerShell** và chạy lần lượt các bước sau:
 
-Prerequisites: Python 3.10+, Git.
+### 1. Clone repository
+```powershell
+git clone [https://github.com/qmtu2520-fit-clc/lab01--github-quanmytu-.git](https://github.com/qmtu2520-fit-clc/lab01--github-quanmytu-.git)
+cd lab01--github-quanmytu-
 
-TODO (Lab 1): write the exact steps a new teammate needs, from a fresh machine to
-running the app and the tests. Your partner will follow them without your help.
+### 2. Thiết lập môi trường ảo (Virtual Environment)
+```powershell
+# Cấp quyền chạy script trên PowerShell (nếu cần)
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
 
-## Run
-&#x09;mkdir \~/projects/csc10014
+# Tạo môi trường ảo (ưu tiên dùng lệnh py trên Windows)
+py -m venv .venv
 
-&#x09;cd \~/projects/csc10014
+# Kích hoạt môi trường ảo
+.\.venv\Scripts\Activate.ps1
 
-&#x09;git clone https://github.com/<your_github_account_name>/lab01-<your_github_account_name>.git
+### 3. Cài đặt thư viện phụ thuộc
+```powershell
+pip install -r requirements.txt
+pip install -e .
 
-&#x09;cd lab01-<your_github_account_name>
+### 4. Kiểm tra môi trường và chạy ứng dụng
+```powershell
+# Kiểm tra môi trường hệ thống
+python scripts/check_env.py
 
-&#x09;Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-
-&#x09;python -m venv .venv
-
-&#x09;.venv\\Scripts\\Activate.ps1
-
-&#x09;Remove-Item -Recurse -Force .venv
-
-&#x09;py -m venv .venv
-
-&#x09;.\\.venv\\Scripts\\Activate.ps1
-
-&#x09;pip install -r requirements.txt
-
-&#x09;python -m assistant "where is the IT helpdesk?"
-
-&#x09;git tag -f v0.1
-
-&#x09;git push origin v0.1 --force
+# Chạy thử trợ lý
+python -m assistant "where is the IT helpdesk?"
 
 ## Test
 
@@ -53,8 +50,13 @@ running the app and the tests. Your partner will follow them without your help.
 
 
 ## Troubleshooting
+Lỗi không kích hoạt được .venv (Script execution is disabled):
+Chạy lệnh sau rồi thử kích hoạt lại:
 
-\- If "mkdir \~/projects/csc10014" "already exists", move to next step.
+PowerShell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+Lệnh python không nhận nhưng máy đã cài Python:
+Dùng lệnh py thay cho python khi tạo venv hoặc chạy script:
 
-\- If "python -m venv .venv" and ".venv\\Scripts\\Activate.ps1" run out red, do "Remove-Item -Recurse -Force .venv" and then "py -m venv .venv".
-
+PowerShell
+py -m venv .venv
