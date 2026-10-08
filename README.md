@@ -14,7 +14,7 @@ Mở **PowerShell** và chạy lần lượt các bước sau:
 
 ### 1. Clone repository
 ```powershell
-git clone [https://github.com/qmtu2520-fit-clc/lab01--github-quanmytu-.git](https://github.com/qmtu2520-fit-clc/lab01--github-quanmytu-.git)
+git clone https://github.com/qmtu2520-fit-clc/lab01--github-quanmytu-.git
 cd lab01--github-quanmytu-
 ```
 
