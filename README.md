@@ -40,6 +40,10 @@ running the app and the tests. Your partner will follow them without your help.
 
 &#x09;python -m assistant "where is the IT helpdesk?"
 
+&#x09;git tag -f v0.1
+
+&#x09;git push origin v0.1 --force
+
 ## Test
 
 &#x09;pytest -q
