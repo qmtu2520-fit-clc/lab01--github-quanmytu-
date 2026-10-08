@@ -1,13 +1,23 @@
 # Study Assistant — starter
 
 A starter repository for the CSC10014 Smart Virtual Assistant project.
+
 Copy and paste, then Enter. If it have any problems, read "Troubleshooting". 
+
 Run on Terminal.
+
 Change "<your_github_account_name>", which is under your avatar.
 
 ## Setup
 
 Prerequisites: Python 3.10+, Git.
+
+TODO (Lab 1): write the exact steps a new teammate needs, from a fresh machine to
+running the app and the tests. Your partner will follow them without your help.
+
+## Run
+
+&#x09;python -m assistant "where is the IT helpdesk?"
 
 &#x09;mkdir \~/projects/csc10014
 
@@ -29,13 +39,6 @@ Prerequisites: Python 3.10+, Git.
 &#x09;.\\.venv\\Scripts\\Activate.ps1
 
 &#x09;pip install -r requirements.txt
-
-TODO (Lab 1): write the exact steps a new teammate needs, from a fresh machine to
-running the app and the tests. Your partner will follow them without your help.
-
-## Run
-
-&#x09;python -m assistant "where is the IT helpdesk?"
 
 ## Test
 
