@@ -16,6 +16,7 @@ Mở **PowerShell** và chạy lần lượt các bước sau:
 ```powershell
 git clone [https://github.com/qmtu2520-fit-clc/lab01--github-quanmytu-.git](https://github.com/qmtu2520-fit-clc/lab01--github-quanmytu-.git)
 cd lab01--github-quanmytu-
+```
 
 ### 2. Thiết lập môi trường ảo (Virtual Environment)
 ```powershell
@@ -27,11 +28,13 @@ py -m venv .venv
 
 # Kích hoạt môi trường ảo
 .\.venv\Scripts\Activate.ps1
+```
 
 ### 3. Cài đặt thư viện phụ thuộc
 ```powershell
 pip install -r requirements.txt
 pip install -e .
+```
 
 ### 4. Kiểm tra môi trường và chạy ứng dụng
 ```powershell
@@ -40,6 +43,7 @@ python scripts/check_env.py
 
 # Chạy thử trợ lý
 python -m assistant "where is the IT helpdesk?"
+```
 
 ## Test
 
@@ -47,16 +51,14 @@ python -m assistant "where is the IT helpdesk?"
 
 ## Project structure
 
-
-
 ## Troubleshooting
 Lỗi không kích hoạt được .venv (Script execution is disabled):
 Chạy lệnh sau rồi thử kích hoạt lại:
-
-PowerShell
+```powershell
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+```
 Lệnh python không nhận nhưng máy đã cài Python:
 Dùng lệnh py thay cho python khi tạo venv hoặc chạy script:
-
-PowerShell
+```powershell
 py -m venv .venv
+```
