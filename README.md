@@ -10,10 +10,9 @@ Prerequisites: Python 3.10+, Git.
 
 &#x09;cd \~/projects/csc10014
 
-&#x09;git clone https://github.com/qmtu2520-fit-clc/lab01--github-quanmytu-.git
+&#x09;git clone https://github.com/<your_github_account_name>/lab01-<your_github_account_name>.git
 
-&#x09;cd lab01--github-quanmytu-
-
+&#x09;cd lab01-<your_github_account_name>
 &#x09;Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 &#x09;python -m venv .venv
