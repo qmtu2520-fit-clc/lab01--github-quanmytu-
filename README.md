@@ -3,6 +3,7 @@
 A starter repository for the CSC10014 Smart Virtual Assistant project.
 Copy and paste, then Enter. If it have any problems, read "Troubleshooting". 
 Run on Terminal.
+Change "<your_github_account_name>", which is under your avatar.
 
 ## Setup
 
