@@ -16,9 +16,6 @@ TODO (Lab 1): write the exact steps a new teammate needs, from a fresh machine t
 running the app and the tests. Your partner will follow them without your help.
 
 ## Run
-
-&#x09;python -m assistant "where is the IT helpdesk?"
-
 &#x09;mkdir \~/projects/csc10014
 
 &#x09;cd \~/projects/csc10014
@@ -26,6 +23,7 @@ running the app and the tests. Your partner will follow them without your help.
 &#x09;git clone https://github.com/<your_github_account_name>/lab01-<your_github_account_name>.git
 
 &#x09;cd lab01-<your_github_account_name>
+
 &#x09;Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 &#x09;python -m venv .venv
@@ -39,6 +37,8 @@ running the app and the tests. Your partner will follow them without your help.
 &#x09;.\\.venv\\Scripts\\Activate.ps1
 
 &#x09;pip install -r requirements.txt
+
+&#x09;python -m assistant "where is the IT helpdesk?"
 
 ## Test
 
